@@ -1,1 +1,32 @@
 
+For this assignment, I built a simple frontend using Python and Streamlit that connects to my backend REST API from Assignment 6 (FastAPI + Supabase). The goal was to make it easy to interact with the API through a basic web interface.
+
+The app lets users do all SCRUD operations (Search, Create, Retrieve, Update, Delete) on movies. I used the Python “requests” library in the frontend to send HTTP requests to my backend endpoints.
+
+Here’s how each part works:
+Search Movies → sends a GET request to /movies to load all movies
+Create Movie → sends a POST request to /movies with form data and an uploaded poster image
+Retrieve Movie → sends a GET request to /movies/{id}
+Update Movie → sends a PATCH request to /movies/{id}
+Delete Movie → sends a DELETE request to /movies/{id}
+
+On the backend side, movie data is stored in a Supabase table, and poster images are uploaded to a Supabase storage bucket. When creating a movie, the image is uploaded first, and then its URL is saved with the movie data.
+
+I deployed the frontend using Streamlit Community Cloud, so it can be accessed online. The interface is simple (sidebar menu + buttons) but it clearly shows that all API endpoints are working from the frontend.
+
+Links:
+
+Frontend App:
+https://stacked2-l6dye5tulhhm8fuunfpskb.streamlit.app/
+
+Backend API:
+https://restful-inlh.onrender.com
+
+Backend Docs:
+https://restful-inlh.onrender.com/docs
+
+Frontend GitHub Repo:
+https://github.com/Chris-arch56/stacked2
+
+Backend GitHub Repo:
+https://github.com/Chris-arch56/restful
