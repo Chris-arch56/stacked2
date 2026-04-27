@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_URL = "https://restful-in1h.onrender.com"
+API_URL = "https://restful-inlh.onrender.com/movies"
 
 st.set_page_config(page_title="Movie Frontend", page_icon="🎬")
 
